@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>webpage</title>
+	<script type="text/javascript" src="index.js">
+	</script>
+	<script type="text/javascript">
+		function showVal(value){
+		if(img =='notebook')
+		document.getElementById('img').src = "pe.jpg";
+	}
+	</script>
+</head>
+<body>
+	<img src="pe.jpg">
+	<select name="stationary" onchange="showVal(value)" id="img">
+		<option value="pencil">Pencil</option>
+		<option value="notebook">Notebook</option>
+		<option value="eraser">Eraser</option>
+		<option value="pen">Pen</option>
+	</select>
+<table border="1">
+	<tr>
+		<td>Input1<br><input type="text" id="num1" placeholder="type Input1"></td>
+	</tr
+	<tr>
+		<td>Input2<br><input type="text"  id="num2" placeholder="type Input2"></td>
+	</tr>
+	<td>
+		<button onclick="sub();">-</button>
+		<button onclick="add();">+</button>
+		<button onclick="mul();">*</button>
+		<button onclick="divide();">/</button>
+	</td>
+	<tr>
+		<td><input type="number" id="res" disabled="true"></td>
+	</tr>
+
+</table>
+</body>
+</html>
